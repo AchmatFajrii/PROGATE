@@ -215,6 +215,7 @@ body{
         box-shadow: none;
     }
     footer{
+	margin-top: 70px;
         background-color: #7C7D82;
     }
     .footer{
