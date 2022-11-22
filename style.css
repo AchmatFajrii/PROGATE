@@ -50,6 +50,11 @@ body{
     }
     header{
         background-color: #404146;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.9;
     }
     .container{
         max-width: 1200px;
