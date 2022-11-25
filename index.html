@@ -14,8 +14,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://achmatfajrii.github.io/ProjectProgate/banneramd.png" />
     <meta property="og:url" content="https://achmatfajrii.github.io/ProjectProgate/" />
-    <meta property="og:title" content="AMD Academy | Learn to code..." />
-    <meta property="og:description" content="AMD Academy is an online platform..." />
+    <meta property="og:title" content="Progate | Learn to code..." />
+    <meta property="og:description" content="Progate is an online platform..." />
     <script src="https://kit.fontawesome.com/7a75119ee3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,7 +30,9 @@
                     <a href="#about">Tentang Saya</a>
                     <a href="#project">Project Contoh</a>
                     <a href="#contact">Hubungi Saya</a>
+                    <button id="dark">Dark Mode</button>
                 </div>
+                
                 <div class="bar">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -42,7 +44,7 @@
     <!-- Awal Jumbotron -->
     <section id="jumbotron">
         <div class="container">
-            <div class="title">
+            <div class="title textdark">
                 <h1>ninja ken<span style="color: #F1D00E;">.</span></h1>
                 <h2>my portfolio</h2>
             </div>
@@ -69,18 +71,18 @@
             <div class="title">
                 <h4>Proyek Contoh</h4>
             </div>
-            <div class="list-image">
+            <div class="list-image textdark">
                 <div class="image1">
                     <img id="image1" src="1.png" width="180px" alt="">
-                    <p>Image 1</p>
+                    <p id="p1">Image 1</p>
                 </div>
                 <div class="image2">
                     <img id="image2" src="2.png" width="180px" alt="">
-                    <p>Image 2</p>
+                    <p id="p2">Image 2</p>
                 </div>
                 <div class="image3">
                     <img id="image1" src="3.png" width="180px" alt="">
-                    <p>Image 3</p>
+                    <p id="p3">Image 3</p>
                 </div>
             </div>
         </div>
@@ -89,16 +91,16 @@
     <!-- Awal Kontak -->
     <section id="contact">
         <div class="container">
-            <div class="title">
-                <h3>Hubungi Saya</h3>
+            <div class="title textdark">
+                <h3 id="h3">Hubungi Saya</h3>
             </div>
             <div class="form">
                 <form action="#form">
-                    <label for="" style="display: block;">Email (Diperlukan)</label>
+                    <label id="email" for="" style="display: block;">Email (Diperlukan)</label>
                     <input type="email" placeholder="Email">
-                    <label for="" style="display: block;">Message (Diperlukan)</label>
+                    <label id="message" for="" style="display: block;">Message (Diperlukan)</label>
                     <textarea name="" id="" cols="30" rows="8" placeholder="Tulis pesan kamu disini"></textarea>
-                    <button style="color: black;">Kirim</button>
+                    <button id="kirim" style="color: black;">Kirim</button>
                 </form>
             </div>
         </div>
@@ -121,5 +123,7 @@
         </div>
     </footer>
     <!-- Akhir Footer -->
+
+    <script src="script.js"></script>
 </body>
 </html>
