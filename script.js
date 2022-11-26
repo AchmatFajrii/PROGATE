@@ -29,7 +29,17 @@
 //     alert('refresh kembali untuk tampilan light mode');
 // })
 
-
+function myFunction() {
+  let x = document.getElementById("myTopnav");
+  let dark = document.querySelector('.dark-mode');
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    dark.style.display = 'none';
+  } else {
+    x.className = "topnav";
+    dark.style.display = 'flex';
+  }
+}
 
 const tChange = document.querySelector('button.change');
 const title = document.querySelector('.title');
