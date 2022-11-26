@@ -356,13 +356,14 @@ footer {
   display: flex;
   background-color: #f1d00e;
   align-items: center;
-  font-size: 13px;
+  font-size: 11px;
   padding: 5px 10px;
   border: none;
   border-radius: 10px;
   background-color: #1f1f1f;
 }
 button.change {
+  font-size: 11px;
   display: block;
   border: none;
   padding: 5px 10px;
@@ -371,6 +372,7 @@ button.change {
 }
 button.back,
 button.ig {
+  cursor: pointer;
   background-color: transparent;
 }
 .light-dark-mode {
@@ -383,7 +385,7 @@ button.ig {
 video {
   margin: 50px auto;
   display: block;
-  width: 400px;
+  width: 280px;
   border-radius: 20px;
   border: none;
   box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);

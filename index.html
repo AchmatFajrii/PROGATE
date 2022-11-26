@@ -7,9 +7,9 @@
     <title>Proyel HTML&CSS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon-32x32.png">
     <meta property="og:type" content="website" />
@@ -26,7 +26,7 @@
         <img src="top.svg" alt="" width="50px">
     </button>
     <button class="ig" type="button">
-        <img src="ig.svg" alt="" width="50px">
+        <a href="http://instagram.com/achmdfajrii"><img src="ig.svg" alt="" width="50px"></a>
     </button>
 
     <!-- Akhit Back to top n WA -->
@@ -45,12 +45,11 @@
                         <p style="color: white;">Dark/Light Mode</p>
                         <button class="change">Change</button>
                     </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
                 </div>
                 
-                
+                <div class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -89,15 +88,15 @@
             </div>
             <div class="list-image textdark">
                 <div class="image">
-                    <img src="1.png" width="180px" alt="">
+                    <img id="image1" src="1.png" width="180px" alt="">
                     <p>Image 1</p>
                 </div>
                 <div class="image2">
-                    <img src="2.png" width="180px" alt="">
+                    <img id="image2" src="2.png" width="180px" alt="">
                     <p>Image 2</p>
                 </div>
                 <div class="image3">
-                    <img src="3.png" width="180px" alt="">
+                    <img id="image3" src="3.png" width="180px" alt="">
                     <p>Image 3</p>
                 </div>
             </div>
