@@ -31,14 +31,12 @@
 
 function myFunction() {
   let x = document.getElementById("myTopnav");
-  let icon = document.querySelector('#mytopnav.icon');
   let dark = document.querySelector('.dark-mode');
 
   if (x.className === "topnav") {
     x.className += " responsive";
     dark.style.display = 'none';
   } else {
-    icon.style.backgroundColor = 'transparent';
     x.className = "topnav";
     dark.style.display = 'flex';
   }
