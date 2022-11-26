@@ -60,5 +60,15 @@
   label {
     margin-left: 30px;
   }
-  
+
+  video {
+    margin: 50px auto;
+    display: block;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+  }
 }

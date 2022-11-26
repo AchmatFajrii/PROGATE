@@ -29,6 +29,15 @@
 //     alert('refresh kembali untuk tampilan light mode');
 // })
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 const tChange = document.querySelector('button.change');
 const title = document.querySelector('.title');
 const title2 = document.querySelector('.title h3');
