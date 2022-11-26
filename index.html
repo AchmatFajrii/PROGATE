@@ -19,6 +19,15 @@
     <script src="https://kit.fontawesome.com/7a75119ee3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Awal Back to top n WA -->
+    <button class="back" type="button" id="btn-back-to-top">
+        <img src="top.svg" alt="" width="50px">
+    </button>
+    <button class="ig" type="button">
+        <img src="ig.svg" alt="" width="50px">
+    </button>
+
+    <!-- Akhit Back to top n WA -->
     <!-- Awal Navbar -->
     <header>
         <div class="container">
@@ -30,7 +39,10 @@
                     <a href="#about">Tentang Saya</a>
                     <a href="#project">Project Contoh</a>
                     <a href="#contact">Hubungi Saya</a>
-                    <button id="dark">Dark Mode</button>
+                    <div class="dark-mode">
+                        <p style="color: white;">Dark/Light Mode</p>
+                        <button class="change">Change</button>
+                    </div>
                 </div>
                 
                 <div class="bar">
@@ -44,7 +56,7 @@
     <!-- Awal Jumbotron -->
     <section id="jumbotron">
         <div class="container">
-            <div class="title textdark">
+            <div class="title">
                 <h1>ninja ken<span style="color: #F1D00E;">.</span></h1>
                 <h2>my portfolio</h2>
             </div>
@@ -54,7 +66,8 @@
         </div>
     </section>
     <!-- Akhir Jumbotron -->
-    
+    <!-- Awal Video -->
+    <video src="progate.mp4" controls width="400px" poster="progate.png"></video>
     <!-- Awal Tentang saya -->
     <section id="about">
         <div class="container">
@@ -72,17 +85,17 @@
                 <h4>Proyek Contoh</h4>
             </div>
             <div class="list-image textdark">
-                <div class="image1">
-                    <img id="image1" src="1.png" width="180px" alt="">
-                    <p id="p1">Image 1</p>
+                <div class="image">
+                    <img src="1.png" width="180px" alt="">
+                    <p>Image 1</p>
                 </div>
                 <div class="image2">
-                    <img id="image2" src="2.png" width="180px" alt="">
-                    <p id="p2">Image 2</p>
+                    <img src="2.png" width="180px" alt="">
+                    <p>Image 2</p>
                 </div>
                 <div class="image3">
-                    <img id="image1" src="3.png" width="180px" alt="">
-                    <p id="p3">Image 3</p>
+                    <img src="3.png" width="180px" alt="">
+                    <p>Image 3</p>
                 </div>
             </div>
         </div>
@@ -91,8 +104,8 @@
     <!-- Awal Kontak -->
     <section id="contact">
         <div class="container">
-            <div class="title textdark">
-                <h3 id="h3">Hubungi Saya</h3>
+            <div class="title">
+                <h3 class="contact">Hubungi Saya</h3>
             </div>
             <div class="form">
                 <form action="#form">

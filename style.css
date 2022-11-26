@@ -102,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  transition: all 1s ease;
 }
 ol,
 ul {
@@ -351,14 +352,54 @@ footer {
   transform: scale(1.2);
   transition: all 0.2s ease;
 }
-
-button#dark {
-  background-color: #1f1f1f;
-  color: white;
+.dark-mode {
+  display: flex;
+  background-color: #f1d00e;
+  align-items: center;
+  font-size: 13px;
   padding: 5px 10px;
   border: none;
   border-radius: 10px;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
+  background-color: #1f1f1f;
+}
+button.change {
+  display: block;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+button.back,
+button.ig {
+  background-color: transparent;
+}
+.light-dark-mode {
+  background-color: #1f1f1f;
+  color: white !important;
+}
+.text-white {
+  color: white;
+}
+video {
+  margin: 10px auto;
+  display: block;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  display: none;
+  border: none;
+}
+.ig {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  display: block;
+  border: none;
 }
