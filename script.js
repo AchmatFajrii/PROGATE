@@ -32,11 +32,13 @@
 function myFunction() {
   let x = document.getElementById("myTopnav");
   let dark = document.querySelector('.dark-mode');
+
   if (x.className === "topnav") {
     x.className += " responsive";
     dark.style.display = 'none';
   } else {
     x.className = "topnav";
+    x.style.backgroundColor = 'transparent';
     dark.style.display = 'flex';
   }
 }
