@@ -125,12 +125,12 @@ table {
 }
 
 /* stylecss */
-body {
+*, html, body {
   font-family: Poppins;
 }
 header {
   background-color: #404146;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;
@@ -161,9 +161,8 @@ header {
 }
 
 .topnav a.active:hover {
-    color:  rgb(140, 214, 211);
-    background-color: transparent;
-    
+  color: rgb(140, 214, 211);
+  background-color: transparent;
 }
 
 .topnav a.active {
@@ -353,19 +352,24 @@ footer {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+#image1 {
+  width: 100%;
+  height: 200px;
+}
+#image2 {
+  width: 100%;
+  height: 200px;
+}
+#image3 {
+  width: 100%;
+  height: 200px;
+}
 
-#image1:hover {
+.card-image:hover {
   transform: scale(1.2);
   transition: all 0.2s ease;
 }
-#image2:hover {
-  transform: scale(1.2);
-  transition: all 0.2s ease;
-}
-#image3:hover {
-  transform: scale(1.2);
-  transition: all 0.2s ease;
-}
+
 .dark-mode {
   float: left;
   display: flex;
@@ -378,6 +382,41 @@ footer {
   border: none;
   border-radius: 10px;
   background-color: #1f1f1f;
+}
+.card-image {
+  max-width: 250px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
+-webkit-box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
+-moz-box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
+}
+.description{
+  margin: 15px 0px;
+  padding: 0px 20px;
+}
+.description h5{
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+.description p{
+  font-size: 12px;
+}
+
+.description button{
+  background-color:  #FD7E90;
+  color: white;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 34%;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.3 ease;
+}
+.description button:hover {
+  background-color: rgb(244,90,112);
 }
 button.change {
   font-size: 11px;
@@ -424,4 +463,54 @@ video {
   right: 25px;
   display: block;
   border: none;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myModal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modalContent {
+  background-color: #fefefe;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 100px;
+  width: 60%;
+  height: 70%;
+  box-sizing: border-box;
+}
+#closeModalIcon {
+  color: #aaaaaa;
+  float: right;
+}
+
+#closeModalIcon:hover,
+#closeModalIcon:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+#openModalButton {
+  margin-top: 20px;
+  font-size: 12px;
+  background-color: #404146;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#openModalButton:hover {
+  background-color: #1f1f1f;
 }

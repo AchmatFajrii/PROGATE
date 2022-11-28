@@ -93,3 +93,17 @@ function backToTop() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
+
+const modal = document.getElementById("myModal");
+    const openButton = document.getElementById("openModalButton");
+    const closeIcon = document.getElementById("closeModalIcon");
+
+    // Ketika tombol openButton ditekan
+    openButton.addEventListener('click', () => {
+        modal.style.display = "block";
+    });
+
+    // Ketika tombol closeButton ditekan
+    closeIcon.addEventListener('click', () => {
+        modal.style.display = "none";
+    });
