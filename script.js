@@ -29,6 +29,10 @@
 //     alert('refresh kembali untuk tampilan light mode');
 // })
 
+
+let welcome = String(prompt('Selamat datang, dengan siapa disini? (Tulis nama kamu)'));
+alert(`Halo kak ${welcome}! Terimakasih telah mengunjungi website ini. Klik OK untuk melanjutkan!`);
+
 function myFunction() {
   let x = document.getElementById("myTopnav");
   let dark = document.querySelector('.dark-mode');
