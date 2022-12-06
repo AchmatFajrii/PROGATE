@@ -377,10 +377,10 @@ footer {
   display: flex;
   background-color: #f1d00e;
   align-items: center;
-  font-size: 11px;
-  padding: 5px 10px;
+  font-size: 10px;
+  padding: 5px 9px;
   margin-top: 6.5px;
-  margin-left: 15px;
+  margin-left: 10px;
   border: none;
   border-radius: 10px;
   background-color: #1f1f1f;
@@ -424,11 +424,11 @@ footer {
   background-color: rgb(244, 90, 112);
 }
 button.change {
-  font-size: 11px;
+  font-size: 10px;
   color: #1f1f1f;
   display: block;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 6px;
   margin-left: 10px;
   border-radius: 10px;
   cursor: pointer;
