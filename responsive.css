@@ -119,7 +119,17 @@
 }
 
 #imageModal{
-  width: 70px;
+  display:none;
+}
+
+#modalContentSlider1 p {
+  font-size: 10px;
+}
+#modalContentSlider1 h2 {
+  font-size: 12px;
+}
+.contentCardModal img{
+  display: none;
 }
 
   

@@ -125,7 +125,9 @@ table {
 }
 
 /* stylecss */
-*, html, body {
+*,
+html,
+body {
   font-family: Poppins;
 }
 header {
@@ -389,27 +391,26 @@ footer {
   box-sizing: border-box;
   border-radius: 5px;
   background-color: white;
-  box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
--webkit-box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
--moz-box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
+  box-shadow: 0px 0px 3px 2px rgba(219, 219, 219, 1);
+  -webkit-box-shadow: 0px 0px 3px 2px rgba(219, 219, 219, 1);
+  -moz-box-shadow: 0px 0px 3px 2px rgba(219, 219, 219, 1);
 }
-.description{
+.description {
   margin: 15px 0px;
   padding: 0px 20px;
 }
-.description h5{
+.description h5 {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 15px;
-  
 }
-.description p{
+.description p {
   font-size: 12px;
   margin-bottom: 15px;
 }
 
-.description button{
-  background-color:  #FD7E90;
+.description button {
+  background-color: #fd7e90;
   color: white;
   font-size: 12px;
   border: none;
@@ -420,7 +421,7 @@ footer {
   transition: all 0.3 ease;
 }
 .description button:hover {
-  background-color: rgb(244,90,112);
+  background-color: rgb(244, 90, 112);
 }
 button.change {
   font-size: 11px;
@@ -501,8 +502,8 @@ video {
   color: #aaaaaa;
   float: right;
 }
-#imageModal{
-  width: 200px
+#imageModal {
+  width: 200px;
 }
 
 #closeModalIcon:hover,
@@ -525,18 +526,19 @@ video {
 #openModalButton:hover {
   background-color: #1f1f1f;
 }
-.project-area{
+.project-area {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-section#project {
+#project {
   position: relative;
   height: 450px;
   width: 1075px;
   display: flex;
   align-items: center;
 }
+
 
 .swiper {
   width: 950px;
@@ -580,25 +582,23 @@ section .card-slide .image {
   margin-top: 30px;
 }
 section .card-slide #html {
-  background-color: rgb(128,223,217);
+  background-color: rgb(128, 223, 217);
 }
 section .card-slide #javascript {
-  background-color: #B7CDEF;
+  background-color: #b7cdef;
 }
 section .card-slide #nodejs {
-  background-color: rgb(175,235,191);
+  background-color: rgb(175, 235, 191);
 }
 section .card-slide #react {
-  background-color: #99E9F5;
+  background-color: #99e9f5;
 }
 section .card-slide #ruby {
-  background-color: #F9B7C1;
+  background-color: #f9b7c1;
 }
 section .card-slide #java {
-  background-color: #E4CEB0;
+  background-color: #e4ceb0;
 }
-
-
 
 section .card-slide .image img {
   height: 95%;
@@ -615,7 +615,6 @@ section .card-slide .image img {
   flex-direction: row;
   align-items: center;
 }
-
 
 .card-slide .name-profession {
   display: flex;
@@ -642,7 +641,6 @@ section .card-slide .image img {
   margin-top: 18px;
 }
 
-
 .card-slide .button {
   width: 100%;
   display: flex;
@@ -651,7 +649,7 @@ section .card-slide .image img {
 }
 
 .card-slide .button button {
-  background: #FD7E90;
+  background: #fd7e90;
   outline: none;
   border: none;
   color: #fff;
@@ -663,7 +661,7 @@ section .card-slide .image img {
 }
 
 .button button:hover {
-  background: rgb(244,90,112);
+  background: rgb(244, 90, 112);
 }
 
 .swiper-pagination {
@@ -688,4 +686,242 @@ section .card-slide .image img {
 .swiper-button-prev:hover {
   opacity: 1;
   color: white;
+}
+.modal-slider1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myModalSlider1 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 90px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+}
+#modalContentSlider1 {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  width: 60%;
+}
+#modalContentSlider1 h2 {
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#modalContentSlider1 p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.contentCardModal img {
+  display: block;
+  margin-top: 10px;
+}
+#modalContentSlider1 span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#closeModalIcon1 {
+  color: #aaaaaa;
+  float: right;
+}
+
+#closeModalIcon1:hover,
+#closeModalIcon1:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-slider2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myModalSlider2 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 90px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+}
+#modalContentSlider2 {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  width: 60%;
+}
+#modalContentSlider2 h2 {
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#modalContentSlider2 p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+#modalContentSlider2 span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#closeModalIcon2 {
+  color: #aaaaaa;
+  float: right;
+}
+#closeModalIcon2:hover,
+#closeModalIcon2:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-slider3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myModalSlider3 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 90px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+}
+#modalContentSlider3 {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  width: 60%;
+}
+#modalContentSlider3 h2 {
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#modalContentSlider3 p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+#modalContentSlider3 span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#closeModalIcon3 {
+  color: #aaaaaa;
+  float: right;
+}
+#closeModalIcon3:hover,
+#closeModalIcon3:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-slider4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myModalSlider4 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 90px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+}
+#modalContentSlider4 {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  width: 60%;
+}
+#modalContentSlider4 h2 {
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#modalContentSlider4 p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+#modalContentSlider4 span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#closeModalIcon4 {
+  color: #aaaaaa;
+  float: right;
+}
+#closeModalIcon4:hover,
+#closeModalIcon4:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.faq-title{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #444;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px #ccc solid;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  display: none;
+  padding: 0 18px;
+  background-color: white;
+}
+
+.panel p {
+  padding: 15px 0;
+  line-height: 1.5;
 }

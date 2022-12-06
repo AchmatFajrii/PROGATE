@@ -45,7 +45,7 @@ function myFunction() {
 
 const tChange = document.querySelector('button.change');
 const title = document.querySelector('.title');
-const title2 = document.querySelector('.title h3');
+const title2 = document.querySelector('#about .title h3');
 const title3 = document.querySelector('.title h4');
 const paragraf = document.querySelector('.title p');
 const tImage1 = document.querySelector('.image p');
@@ -54,6 +54,7 @@ const tImage3 = document.querySelector('.image3 p');
 const title4 = document.querySelector('h3.contact');
 const labelEmail = document.querySelector('label#email');
 const labelMessage = document.querySelector('label#message');
+const titleProject = document.querySelector('#project .swiper h5');
 
 tChange.addEventListener('click', function() {
     document.body.classList.toggle('light-dark-mode');
@@ -67,6 +68,7 @@ tChange.addEventListener('click', function() {
     tImage3.classList.toggle('text-white');
     labelEmail.classList.toggle('text-white');
     labelMessage.classList.toggle('text-white');
+    titleProject.classList.toggle('text-white');
 });
 
 //Get the button
@@ -113,7 +115,7 @@ const modal = document.getElementById("myModal");
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+  slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
@@ -125,3 +127,59 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+  const modaSlider1 = document.getElementById("myModalSlider1");
+  const openButtonSlider1 = document.getElementById("openModalButtonSlider1");
+  const closeIconSlider1 = document.getElementById("closeModalIcon1");
+
+  // Ketika tombol openButton ditekan
+  openButtonSlider1.addEventListener('click', () => {
+    modaSlider1.style.display = "block";
+  });
+
+  // Ketika tombol closeButton ditekan
+  closeIconSlider1.addEventListener('click', () => {
+    modaSlider1.style.display = "none";
+  });
+
+  const modaSlider2 = document.getElementById("myModalSlider2");
+  const openButtonSlider2 = document.getElementById("openModalButtonSlider2");
+  const closeIconSlider2 = document.getElementById("closeModalIcon2");
+
+  // Ketika tombol openButton ditekan
+  openButtonSlider2.addEventListener('click', () => {
+    modaSlider2.style.display = "block";
+  });
+
+  // Ketika tombol closeButton ditekan
+  closeIconSlider2.addEventListener('click', () => {
+    modaSlider2.style.display = "none";
+  });
+
+  const modaSlider3 = document.getElementById("myModalSlider3");
+  const openButtonSlider3 = document.getElementById("openModalButtonSlider3");
+  const closeIconSlider3 = document.getElementById("closeModalIcon3");
+
+  // Ketika tombol openButton ditekan
+  openButtonSlider3.addEventListener('click', () => {
+    modaSlider3.style.display = "block";
+  });
+
+  // Ketika tombol closeButton ditekan
+  closeIconSlider3.addEventListener('click', () => {
+    modaSlider3.style.display = "none";
+  });
+
+const accordion = document.getElementsByClassName("accordion");
+
+  for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function () {
+      const panel = this.nextElementSibling;
+
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
