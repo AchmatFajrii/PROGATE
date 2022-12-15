@@ -183,3 +183,12 @@ const accordion = document.getElementsByClassName("accordion");
       }
     });
   }
+
+  const email = document.querySelector('form input');
+  const kirim = document.querySelector('#kirim');
+  
+  kirim.addEventListener('click', function(){
+    if (email.value != "achmatfajri@gmail.com"){
+      alert('harus mengisikan email!')
+    }
+  })
